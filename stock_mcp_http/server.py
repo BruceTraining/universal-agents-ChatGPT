@@ -9,7 +9,7 @@ Run with UV:
   uv run stock-mcp-http
 
 Connect ChatGPT Developer Mode to:
-  http://localhost:8000/mcp
+  http://localhost:8000/mcp via a tunnel
 """
 
 import os
