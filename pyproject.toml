@@ -1,0 +1,21 @@
+[project]
+name = "stock-mcp-http"
+version = "0.1.0"
+description = "Stock MCP Server with HTTP Streaming transport for ChatGPT integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.25.0,<2",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.1.1",
+    "twelvedata>=1.2.25",
+]
+
+[project.scripts]
+stock-mcp-http = "stock_mcp_http.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["stock_mcp_http"]
+
+[tool.uv]
+package = true
